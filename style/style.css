@@ -130,3 +130,9 @@ ul li a:hover{
         border-radius: 0;
     }
     }
+@media screen and (max-width:450px){
+        .navBar ul li a{
+            width: 25rem;
+            height: 6rem;
+            font-size: 2.8rem;
+        }
