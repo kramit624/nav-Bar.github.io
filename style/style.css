@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    font-size: 10px;
+}
+
+.head{
+    width: 100vw;
+    height: 7rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    align-items: center;
+}
+
+.logo h3{
+    font-size: 3.3rem;
+    padding-left: 2.5rem;
+    font-family: sans-serif;
+    letter-spacing: .5rem;
+    color: #fff;
+}
+
+ul{
+    display: flex;
+    width: 73rem;
+    height: 7rem;
+    justify-content: space-around;
+    align-items: center;
+}
+ul li{
+    padding: 0 1rem;
+}
+ul li a{
+    display: block;
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    color: aliceblue;
+    width: 12rem;
+    height: 3.3rem;
+    border-radius: 1rem;
+    text-align: center;
+    padding-top: .6rem;
+    transition: all .3s ease-in-out;
+}
+
+ul li .contact{
+    width: 13rem;
+}
+
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.tog{
+    display: none;
+
+}
+.tog img{
+    width: 3.5rem;
+}
+
+@media screen and (max-width:970px){
+    html{
+        font-size: 8px;
+    }
+}
+@media screen and (max-width:768px){
+    html{
+        font-size: 6px;
+    }
+}
+@media screen and (max-width:600px){
+    html{
+        font-size: 6px;
+    }
+    nav{
+        display: none;
+    }
+    .tog{
+        display: flex;
+        height: 10rem;
+        width: 7rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .navBar{
+        display: block;
+        position: absolute;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 0;
+        background: #544757;
+        transition: .5s;
+        overflow: hidden;
+        box-shadow: 0 0 35px black;
+    }
+
+    .navBar.active{
+        width: 50vw;
+    }
+    .navBar.active ul{
+        opacity: 1;
+    }
+
+    .navBar ul{
+        display: block;
+        width: fit-content;
+        margin: 8rem auto 0 auto;
+        text-align: center;
+        transition: .5s;
+        opacity: 0;
+    }
+    .navBar ul li{
+        margin: 5rem 0;
+    }
+    .navBar ul li a{
+        width: 35rem;
+        height: 6rem;
+        font-size: 3.5rem;
+        border-bottom: 1px solid white;
+        border-radius: 0;
+    }
+    }
